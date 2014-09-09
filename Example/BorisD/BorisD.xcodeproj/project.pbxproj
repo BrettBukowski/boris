@@ -1,0 +1,428 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DD79926419BE93F500DA7C08 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD79926319BE93F500DA7C08 /* AppDelegate.swift */; };
+		DD79926619BE93F500DA7C08 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD79926519BE93F500DA7C08 /* ViewController.swift */; };
+		DD79926919BE93F500DA7C08 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD79926719BE93F500DA7C08 /* Main.storyboard */; };
+		DD79926B19BE93F500DA7C08 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD79926A19BE93F500DA7C08 /* Images.xcassets */; };
+		DD79927719BE93F500DA7C08 /* BorisDTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD79927619BE93F500DA7C08 /* BorisDTests.swift */; };
+		DD79928919BE9A1300DA7C08 /* Delaunay.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD79928819BE9A1300DA7C08 /* Delaunay.swift */; };
+		DD79928A19BE9A1300DA7C08 /* Delaunay.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD79928819BE9A1300DA7C08 /* Delaunay.swift */; };
+		DDBF2F0519BEA60200FA5D66 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDBF2F0419BEA60200FA5D66 /* CoreGraphics.framework */; };
+		DDBF2F0919BEAB7200FA5D66 /* DelaunayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBF2F0819BEAB7200FA5D66 /* DelaunayView.swift */; };
+		DDBF2F0A19BEAB7200FA5D66 /* DelaunayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBF2F0819BEAB7200FA5D66 /* DelaunayView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DD79927119BE93F500DA7C08 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DD79925619BE93F500DA7C08 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DD79925D19BE93F500DA7C08;
+			remoteInfo = BorisD;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DD79925E19BE93F500DA7C08 /* BorisD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BorisD.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD79926219BE93F500DA7C08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD79926319BE93F500DA7C08 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DD79926519BE93F500DA7C08 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DD79926819BE93F500DA7C08 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DD79926A19BE93F500DA7C08 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		DD79927019BE93F500DA7C08 /* BorisDTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BorisDTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD79927519BE93F500DA7C08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD79927619BE93F500DA7C08 /* BorisDTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorisDTests.swift; sourceTree = "<group>"; };
+		DD79928819BE9A1300DA7C08 /* Delaunay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Delaunay.swift; sourceTree = "<group>"; };
+		DDBF2F0419BEA60200FA5D66 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		DDBF2F0819BEAB7200FA5D66 /* DelaunayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DelaunayView.swift; path = BorisD/DelaunayView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DD79925B19BE93F500DA7C08 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDBF2F0519BEA60200FA5D66 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD79926D19BE93F500DA7C08 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DD79925519BE93F500DA7C08 = {
+			isa = PBXGroup;
+			children = (
+				DDBF2F0819BEAB7200FA5D66 /* DelaunayView.swift */,
+				DDBF2F0419BEA60200FA5D66 /* CoreGraphics.framework */,
+				DD79926019BE93F500DA7C08 /* BorisD */,
+				DD79927319BE93F500DA7C08 /* BorisDTests */,
+				DD79925F19BE93F500DA7C08 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DD79925F19BE93F500DA7C08 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DD79925E19BE93F500DA7C08 /* BorisD.app */,
+				DD79927019BE93F500DA7C08 /* BorisDTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DD79926019BE93F500DA7C08 /* BorisD */ = {
+			isa = PBXGroup;
+			children = (
+				DD79928819BE9A1300DA7C08 /* Delaunay.swift */,
+				DD79926319BE93F500DA7C08 /* AppDelegate.swift */,
+				DD79926519BE93F500DA7C08 /* ViewController.swift */,
+				DD79926719BE93F500DA7C08 /* Main.storyboard */,
+				DD79926A19BE93F500DA7C08 /* Images.xcassets */,
+				DD79926119BE93F500DA7C08 /* Supporting Files */,
+			);
+			path = BorisD;
+			sourceTree = "<group>";
+		};
+		DD79926119BE93F500DA7C08 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DD79926219BE93F500DA7C08 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DD79927319BE93F500DA7C08 /* BorisDTests */ = {
+			isa = PBXGroup;
+			children = (
+				DD79927619BE93F500DA7C08 /* BorisDTests.swift */,
+				DD79927419BE93F500DA7C08 /* Supporting Files */,
+			);
+			path = BorisDTests;
+			sourceTree = "<group>";
+		};
+		DD79927419BE93F500DA7C08 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DD79927519BE93F500DA7C08 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DD79925D19BE93F500DA7C08 /* BorisD */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD79927A19BE93F500DA7C08 /* Build configuration list for PBXNativeTarget "BorisD" */;
+			buildPhases = (
+				DD79925A19BE93F500DA7C08 /* Sources */,
+				DD79925B19BE93F500DA7C08 /* Frameworks */,
+				DD79925C19BE93F500DA7C08 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BorisD;
+			productName = BorisD;
+			productReference = DD79925E19BE93F500DA7C08 /* BorisD.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DD79926F19BE93F500DA7C08 /* BorisDTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD79927D19BE93F500DA7C08 /* Build configuration list for PBXNativeTarget "BorisDTests" */;
+			buildPhases = (
+				DD79926C19BE93F500DA7C08 /* Sources */,
+				DD79926D19BE93F500DA7C08 /* Frameworks */,
+				DD79926E19BE93F500DA7C08 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DD79927219BE93F500DA7C08 /* PBXTargetDependency */,
+			);
+			name = BorisDTests;
+			productName = BorisDTests;
+			productReference = DD79927019BE93F500DA7C08 /* BorisDTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DD79925619BE93F500DA7C08 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = "Brett Bukowski";
+				TargetAttributes = {
+					DD79925D19BE93F500DA7C08 = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					DD79926F19BE93F500DA7C08 = {
+						CreatedOnToolsVersion = 6.0;
+						TestTargetID = DD79925D19BE93F500DA7C08;
+					};
+				};
+			};
+			buildConfigurationList = DD79925919BE93F500DA7C08 /* Build configuration list for PBXProject "BorisD" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DD79925519BE93F500DA7C08;
+			productRefGroup = DD79925F19BE93F500DA7C08 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DD79925D19BE93F500DA7C08 /* BorisD */,
+				DD79926F19BE93F500DA7C08 /* BorisDTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DD79925C19BE93F500DA7C08 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD79926919BE93F500DA7C08 /* Main.storyboard in Resources */,
+				DD79926B19BE93F500DA7C08 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD79926E19BE93F500DA7C08 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DD79925A19BE93F500DA7C08 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD79928919BE9A1300DA7C08 /* Delaunay.swift in Sources */,
+				DD79926619BE93F500DA7C08 /* ViewController.swift in Sources */,
+				DD79926419BE93F500DA7C08 /* AppDelegate.swift in Sources */,
+				DDBF2F0919BEAB7200FA5D66 /* DelaunayView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD79926C19BE93F500DA7C08 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDBF2F0A19BEAB7200FA5D66 /* DelaunayView.swift in Sources */,
+				DD79928A19BE9A1300DA7C08 /* Delaunay.swift in Sources */,
+				DD79927719BE93F500DA7C08 /* BorisDTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DD79927219BE93F500DA7C08 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DD79925D19BE93F500DA7C08 /* BorisD */;
+			targetProxy = DD79927119BE93F500DA7C08 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DD79926719BE93F500DA7C08 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DD79926819BE93F500DA7C08 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DD79927819BE93F500DA7C08 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DD79927919BE93F500DA7C08 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DD79927B19BE93F500DA7C08 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = BorisD/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		DD79927C19BE93F500DA7C08 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = BorisD/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		DD79927E19BE93F500DA7C08 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = BorisDTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BorisD.app/BorisD";
+			};
+			name = Debug;
+		};
+		DD79927F19BE93F500DA7C08 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = BorisDTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BorisD.app/BorisD";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DD79925919BE93F500DA7C08 /* Build configuration list for PBXProject "BorisD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD79927819BE93F500DA7C08 /* Debug */,
+				DD79927919BE93F500DA7C08 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD79927A19BE93F500DA7C08 /* Build configuration list for PBXNativeTarget "BorisD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD79927B19BE93F500DA7C08 /* Debug */,
+				DD79927C19BE93F500DA7C08 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD79927D19BE93F500DA7C08 /* Build configuration list for PBXNativeTarget "BorisDTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD79927E19BE93F500DA7C08 /* Debug */,
+				DD79927F19BE93F500DA7C08 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DD79925619BE93F500DA7C08 /* Project object */;
+}
