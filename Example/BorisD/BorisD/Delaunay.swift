@@ -18,7 +18,7 @@ public class Delaunay {
         self.points = points
     }
 
-    func render(inout size: Int) -> Array<CGPoint> {
+    func render() -> Array<CGPoint> {
         let indices = compute()!
         var pointList = Array<CGPoint>()
 
@@ -27,8 +27,6 @@ public class Delaunay {
             pointList.append(points[indices[i + 1]])
             pointList.append(points[indices[i + 2]])
         }
-
-        size = indices.count
         
         return pointList
     }
@@ -104,6 +102,10 @@ public class Delaunay {
 
             edgeList = []
         }
+
+        id0 = points.count - 3
+        id1 = points.count - 2
+        id2 = points.count - 1
 
         for var i = 0; i < indices.count; i+=3 {
             if Delaunay.indicesMatch(indices, i: i, id0: id0, id1: id1, id2: id2) {

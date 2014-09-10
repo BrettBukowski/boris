@@ -10,16 +10,24 @@ import UIKit
 import CoreGraphics
 
 public class DelaunayView : UIView {
-    var length = 0
     var pointList = Array<CGPoint>()
 
     let num = 50
     let r = 50
 
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        self.backgroundColor = UIColor.redColor()
+    }
+
+    required public init(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+    }
+
     override public func drawRect(rect: CGRect) {
         var context = UIGraphicsGetCurrentContext()
 
-        for var i = 0; i < length; i += 3 {
+        for var i = 0; i < pointList.count; i += 3 {
             CGContextBeginPath(context)
 
             CGContextSetRGBFillColor(context, randomColor(), randomColor(), randomColor(), 1.0)

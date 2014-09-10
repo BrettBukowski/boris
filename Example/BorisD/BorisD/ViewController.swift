@@ -9,18 +9,23 @@
 import UIKit
 
 class ViewController: UIViewController {
-    private var delaunay: Delaunay
+    private var delaunay: Delaunay?
 
     let numberOfPoints = 30
     let width = UIScreen.mainScreen().bounds.size.width
     let height = UIScreen.mainScreen().bounds.size.height
 
-//    @IBOutlet var delaunayView: DelaunayView!
-
-    var delaunayView: DelaunayView
-
     required init(coder aDecoder: NSCoder) {
-        delaunayView = DelaunayView()
+        super.init(coder: aDecoder)
+    }
+
+    override func loadView() {
+        view = DelaunayView(frame: UIScreen.mainScreen().applicationFrame)
+    }
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
         var points = [
             CGPoint(x: 0, y: 0),
             CGPoint(x: width, y: 0),
@@ -35,31 +40,12 @@ class ViewController: UIViewController {
 
         delaunay = Delaunay(points: points)
 
-        super.init(coder: aDecoder)
-//        self.view = DelaunayView()
-//        fatalError("init(coder:) has not been implemented")
-    }
+        var pointList = delaunay!.render()
 
-//    override func loadView() {
-//        view.addSubview(delaunayView)
-//    }
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-
-        var length = 0
-        var pointList = delaunay.render(&length)
-
-        (view as DelaunayView).length = length
         (view as DelaunayView).pointList = pointList
+
         view.setNeedsDisplay()
     }
-
-    func drawRect(rect: CGRect) {
-        var context = UIGraphicsGetCurrentContext()
-    }
-
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
