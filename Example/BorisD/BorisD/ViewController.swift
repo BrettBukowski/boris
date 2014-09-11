@@ -40,7 +40,7 @@ class ViewController: UIViewController {
 
         delaunay = Delaunay(points: points)
 
-        var pointList = delaunay!.render()
+        var pointList = delaunay!.computePoints()
 
         (view as DelaunayView).pointList = pointList
 

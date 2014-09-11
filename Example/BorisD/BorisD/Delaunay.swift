@@ -18,8 +18,8 @@ public class Delaunay {
         self.points = points
     }
 
-    func render() -> Array<CGPoint> {
-        let indices = compute()!
+    func computePoints () -> Array<CGPoint> {
+        let indices = computeIndices()!
         var pointList = Array<CGPoint>()
 
         for var i = 0; i < indices.count; i+=3 {
@@ -31,7 +31,7 @@ public class Delaunay {
         return pointList
     }
 
-    func compute () -> Array<Int>? {
+    func computeIndices () -> Array<Int>? {
         let numberOfPoints = points.count
 
         if numberOfPoints < 3 {

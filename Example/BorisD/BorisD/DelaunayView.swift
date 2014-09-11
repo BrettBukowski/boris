@@ -12,12 +12,16 @@ import CoreGraphics
 public class DelaunayView : UIView {
     var pointList = Array<CGPoint>()
 
-    let num = 50
-    let r = 50
+    private var drawn = false
+
+    private var colorGradient: ColorGradient?
 
     override init(frame: CGRect) {
         super.init(frame: frame)
-        self.backgroundColor = UIColor.redColor()
+
+        colorGradient = ColorGradient(palette: "random")
+
+        self.backgroundColor = UIColor.whiteColor()
     }
 
     required public init(coder aDecoder: NSCoder) {
@@ -25,12 +29,16 @@ public class DelaunayView : UIView {
     }
 
     override public func drawRect(rect: CGRect) {
-        var context = UIGraphicsGetCurrentContext()
+        if (drawn) {
+            return
+        }
+
+        let context = UIGraphicsGetCurrentContext()
 
         for var i = 0; i < pointList.count; i += 3 {
             CGContextBeginPath(context)
 
-            CGContextSetRGBFillColor(context, randomColor(), randomColor(), randomColor(), 1.0)
+            CGContextSetFillColorWithColor(context, colorGradient!.getRandomColor().CGColor)
 
             CGContextMoveToPoint(context, pointList[i].x, pointList[i].y)
 
@@ -41,9 +49,7 @@ public class DelaunayView : UIView {
 
             CGContextFillPath(context)
         }
-    }
 
-    private func randomColor() -> CGFloat {
-        return CGFloat(((Int(arc4random()) % r) + num) / 100.0)
+        drawn = true
     }
 }

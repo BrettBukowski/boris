@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DD548D3C19C149E90024EEB1 /* ColorGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD548D3B19C149E90024EEB1 /* ColorGradient.swift */; };
+		DD548D3D19C149E90024EEB1 /* ColorGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD548D3B19C149E90024EEB1 /* ColorGradient.swift */; };
 		DD79926419BE93F500DA7C08 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD79926319BE93F500DA7C08 /* AppDelegate.swift */; };
 		DD79926619BE93F500DA7C08 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD79926519BE93F500DA7C08 /* ViewController.swift */; };
 		DD79926919BE93F500DA7C08 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD79926719BE93F500DA7C08 /* Main.storyboard */; };
@@ -30,6 +32,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DD548D3B19C149E90024EEB1 /* ColorGradient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ColorGradient.swift; path = BorisD/ColorGradient.swift; sourceTree = "<group>"; };
 		DD79925E19BE93F500DA7C08 /* BorisD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BorisD.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD79926219BE93F500DA7C08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DD79926319BE93F500DA7C08 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -67,6 +70,7 @@
 			isa = PBXGroup;
 			children = (
 				DDBF2F0819BEAB7200FA5D66 /* DelaunayView.swift */,
+				DD548D3B19C149E90024EEB1 /* ColorGradient.swift */,
 				DDBF2F0419BEA60200FA5D66 /* CoreGraphics.framework */,
 				DD79926019BE93F500DA7C08 /* BorisD */,
 				DD79927319BE93F500DA7C08 /* BorisDTests */,
@@ -220,6 +224,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD548D3C19C149E90024EEB1 /* ColorGradient.swift in Sources */,
 				DD79928919BE9A1300DA7C08 /* Delaunay.swift in Sources */,
 				DD79926619BE93F500DA7C08 /* ViewController.swift in Sources */,
 				DD79926419BE93F500DA7C08 /* AppDelegate.swift in Sources */,
@@ -234,6 +239,7 @@
 				DDBF2F0A19BEAB7200FA5D66 /* DelaunayView.swift in Sources */,
 				DD79928A19BE9A1300DA7C08 /* Delaunay.swift in Sources */,
 				DD79927719BE93F500DA7C08 /* BorisDTests.swift in Sources */,
+				DD548D3D19C149E90024EEB1 /* ColorGradient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
